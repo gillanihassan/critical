@@ -1,0 +1,20 @@
+.footerBg {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.footerLogo {
+  height: 40px;
+}
+.textBlack {
+  color: #333;
+  font-size: 0.9rem;
+}
+.socialIcon {
+  font-size: 1.5rem;
+  color: #333;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+.socialIcon:hover {
+  color: #d50000;
+}

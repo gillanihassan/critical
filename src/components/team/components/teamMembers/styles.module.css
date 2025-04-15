@@ -1,0 +1,28 @@
+.mainContainer {
+  background-color:  rgb(10, 10, 10);
+  min-height: 100vh;
+  /* border: 2px solid red; */
+}
+
+.card-img-top {
+  height: auto;
+  object-fit: cover;
+}
+.customHeading{
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 400;
+}
+.customCard{
+background-color: rgb(10, 10, 10);
+}
+.customDesignation{
+  color: #BC0017;
+  font-size: 16px;
+  font-weight: 400;
+}
+.customName{
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 400;
+}
