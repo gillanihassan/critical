@@ -2,7 +2,7 @@
   background-color: #FFFFFF;
 }
 .footerLogo {
-  width: 411px;
+  width: auto;
   height: 72px;
 }
 .textBlack {
@@ -16,4 +16,10 @@
 }
 .socialIcon:hover {
   color: #d50000;
+}
+@media only screen and (max-width: 576px) {
+  .footerLogo {
+    width: auto;
+    height: 32px;
+  }
 }
