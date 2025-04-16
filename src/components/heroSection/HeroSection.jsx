@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
 import styles from "./styles.module.css";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 
 function HeroSection() {
   return (
     <div className={`p-3 ${styles.mainBg}`}>
       <Navbar expand="lg" variant="dark" className="px-3">
-        <Navbar.Brand href="#home" className={`${styles.brand}`}>
+        <Navbar.Brand as={Link} to="/" className={`${styles.brand}`}>
           CRITIC<span style={{ color: "red" }}>A</span>L
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,18 +20,10 @@ function HeroSection() {
             >
               TEAM
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/work"
-              className={`mx-3 ${styles.customLink}`}
-            >
+            <Nav.Link as={Link} to="#" className={`mx-3 ${styles.customLink}`}>
               WORK
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/collabs"
-              className={`mx-3 ${styles.customLink}`}
-            >
+            <Nav.Link as={Link} to="#" className={`mx-3 ${styles.customLink}`}>
               COLLABS
             </Nav.Link>
             <Nav.Link
@@ -47,12 +39,12 @@ function HeroSection() {
 
       <Container
         fluid
-        className="d-flex flex-column justify-content-end"
-        style={{ height: "80%" }}
+        className="d-flex flex-column justify-content-end mt-5"
+        style={{ height: "85%" }}
       >
-        <Row className="">
+        <Row>
           <Col className="text-center">
-            <h1 className={`${styles.customHeading}`}>
+            <h1 className={` ${styles.customHeading}`}>
               A leading global <br /> independent content studio.
             </h1>
           </Col>

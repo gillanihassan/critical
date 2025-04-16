@@ -51,7 +51,7 @@ function TeamMember() {
           {teamMembers.map((member, index) => (
             <Col md={4} className="mb-5" key={index}>
               <Card className={`${styles.customCard}`}>
-                <Card.Img variant="top" src={member.img} />
+                <Card.Img variant="top" src={member.img} className="p-3" />
                 <Card.Body className="text-start">
                   <Card.Text className={`${styles.customDesignation}`}>
                     {member.designation}

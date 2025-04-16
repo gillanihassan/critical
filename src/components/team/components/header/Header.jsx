@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./styles.module.css";
 
 function Header() {
@@ -8,22 +8,30 @@ function Header() {
     <div className={`${styles.mainContainer}`}>
       {/* Navbar */}
       <Navbar expand="lg" variant="dark" className="px-3">
-        <Navbar.Brand href="#home" className="text-white fw-bold">
+        <Navbar.Brand as={NavLink} to="/" className={`mt-3 ${styles.brand}`}>
           CRITIC<span style={{ color: "red" }}>A</span>L
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
-          <Nav>
-            <Nav.Link as={Link} to="/team" className="text-white">
+          <Nav className={`${styles.customNav}`}>
+            <Nav.Link
+              as={Link}
+              to="/team"
+              className={`mx-3 ${styles.customLink}`}
+            >
               TEAM
             </Nav.Link>
-            <Nav.Link as={Link} to="/work" className="text-white">
+            <Nav.Link as={Link} to="#" className={`mx-3 ${styles.customLink}`}>
               WORK
             </Nav.Link>
-            <Nav.Link as={Link} to="/collabs" className="text-white">
+            <Nav.Link as={Link} to="#" className={`mx-3 ${styles.customLink}`}>
               COLLABS
             </Nav.Link>
-            <Nav.Link as={Link} to="/trend" className="text-white">
+            <Nav.Link
+              as={Link}
+              to="/trend"
+              className={`mx-3 ${styles.customLink}`}
+            >
               TRENDING
             </Nav.Link>
           </Nav>
@@ -31,7 +39,7 @@ function Header() {
       </Navbar>
 
       {/* Content Area */}
-      <Container fluid>
+      <Container fluid className="p-3">
         <Row className=" ">
           {/* First Row - Heading */}
           <Col md={12} className="ps-5 mt-5">

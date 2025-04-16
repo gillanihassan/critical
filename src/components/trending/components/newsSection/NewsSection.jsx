@@ -36,7 +36,7 @@ function NewsSection() {
     {
       date: "December 4, 2024",
       title:
-        "Critical Content Boss Jenny Daly Talks Going Global, Prepping Formats With ‘Physical: 100’ Team & Rebooting ‘Storage Hunters’",
+        "Critical Content Boss Jenny Daly Talks Going Global, Prepping Formats With ‘Physical: 100’ Team & Rebooting ‘Storage Hunters’ As Firm Strikes Deal With Germany’s Leonine",
       image: imageFive,
     },
     {
@@ -49,15 +49,15 @@ function NewsSection() {
   return (
     <div className={`p-3 mb-5 ${styles.mainBg}`}>
       <Container fluid className="p-3">
-        <h5 className={` mb-5 mt-5 ${styles.customHeading}`}>News</h5>
+        <h5 className={` mb-4 ${styles.customHeading}`}>News</h5>
 
         <Row className="mb-5">
           {newsData.map((item, index) => (
             <Col md={4} className="mb-4" key={index}>
               <Card className={`${styles.customCard}`}>
                 <Card.Img variant="top" src={item.image} />
-                <Card.Body>
-                  <Badge className={` mb-2 ${styles.customBadge}`}>
+                <Card.Body className="p-0 mt-5 mb-5">
+                  <Badge className={` mb-4 ${styles.customBadge}`}>
                     {item.date}
                   </Badge>
                   <Card.Text className={`${styles.customTitle}`}>

@@ -16,6 +16,7 @@ import cardFour from "../../assets/images/cardSection/cardFour.png";
 import cardFive from "../../assets/images/cardSection/cardFive.png";
 import cardSix from "../../assets/images/cardSection/cardSix.png";
 import vectorOne from "../../assets/images/cardSection/vectorOne.png";
+import { Link } from "react-router-dom";
 
 function CardSection() {
   const featuredWork = [
@@ -25,7 +26,7 @@ function CardSection() {
       id: 3,
       title: "Celebrity Game Face",
       img: cardThree,
-      label: "Celebrity CELEBRITY GAME FACE",
+      label: "NBC",
     },
     {
       id: 4,
@@ -67,9 +68,11 @@ function CardSection() {
       </Row>
 
       <div className="text-center mt-5 mb-5">
-        <Button variant="link" className={`mb-2 ${styles.seeMoreBtn}`}>
-          See More
-        </Button>
+        <h3 className="mb-3 mt-5">
+          <Link to="/" className={`${styles.seeMoreBtn}`}>
+            See More
+          </Link>
+        </h3>
       </div>
     </Container>
   );

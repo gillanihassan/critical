@@ -21,12 +21,14 @@ h5, .card-title, .see-more-btn {
 
 .customCard{
   background-color:  rgb(10, 10, 10);
+  
 }
 .customBadge {
   background-color: #BC0017 !important;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   padding: 3px 20px;
+  
 }
 .customTitle{
   font-size: 40px;
@@ -37,6 +39,8 @@ h5, .card-title, .see-more-btn {
   color: #BC0017;
   font-size: 60px;
   font-weight: 400;
+  display: inline-block;
+
 }
 .seeMoreBtn:hover {
   color: #BC0017;

@@ -35,8 +35,11 @@ function Footer() {
               <Image src={iconThree} className={`${styles.socialIcon}`} />
             </a>
           </div>
-          <div className="mb-5">
-            <p className="mt-5"> ©2024 Critical All Rights Reserved.</p>
+          <div
+            className="d-flex flex-column justify-content-end"
+            style={{ height: "15vh" }}
+          >
+            <p className="mt-5">©2024 Critical All Rights Reserved.</p>
           </div>
         </Col>
       </Row>

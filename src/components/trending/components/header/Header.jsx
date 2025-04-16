@@ -5,25 +5,41 @@ import styles from "./styles.module.css";
 
 function Header() {
   return (
-    <div className={`${styles.mainContainer}`}>
+    <div className={`p-3 ${styles.mainContainer}`}>
       {/* Navbar */}
       <Navbar expand="lg" variant="dark" className="px-3">
-        <Navbar.Brand href="#home" className="text-white fw-bold">
+        <Navbar.Brand as={Link} to="/" className={`${styles.brand}`}>
           CRITIC<span style={{ color: "red" }}>A</span>L
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
-          <Nav>
-            <Nav.Link as={Link} to="/team" className="text-white">
+          <Nav className={`${styles.customNav}`}>
+            <Nav.Link
+              as={Link}
+              to="/team"
+              className={`mx-3 ${styles.customLink}`}
+            >
               TEAM
             </Nav.Link>
-            <Nav.Link as={Link} to="/work" className="text-white">
+            <Nav.Link
+              as={Link}
+              to="/work"
+              className={`mx-3 ${styles.customLink}`}
+            >
               WORK
             </Nav.Link>
-            <Nav.Link as={Link} to="/collabs" className="text-white">
+            <Nav.Link
+              as={Link}
+              to="/collabs"
+              className={`mx-3 ${styles.customLink}`}
+            >
               COLLABS
             </Nav.Link>
-            <Nav.Link as={Link} to="/trend" className="text-white">
+            <Nav.Link
+              as={Link}
+              to="/trend"
+              className={`mx-3 ${styles.customLink}`}
+            >
               TRENDING
             </Nav.Link>
           </Nav>
