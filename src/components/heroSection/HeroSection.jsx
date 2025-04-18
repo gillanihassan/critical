@@ -1,14 +1,15 @@
 import React from "react";
-import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
+import { Container, Row, Col, Nav, Navbar, Image } from "react-bootstrap";
 import styles from "./styles.module.css";
 import { Link, Links } from "react-router-dom";
+import Logo from "../../assets/images/heroSection/criticalLogo.png";
 
 function HeroSection() {
   return (
     <div className={`p-3 ${styles.mainBg}`}>
       <Navbar expand="lg" variant="dark" className="px-3">
-        <Navbar.Brand as={Link} to="/" className={`${styles.brand}`}>
-          CRITIC<span style={{ color: "red" }}>A</span>L
+        <Navbar.Brand as={Link} to="/">
+          <Image src={Logo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">

@@ -1,15 +1,16 @@
 import React from "react";
-import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
+import { Container, Row, Col, Nav, Navbar, Image } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./styles.module.css";
+import Logo from "../../../../assets/images/teamSection/criticalLogo.png";
 
 function Header() {
   return (
     <div className={`${styles.mainContainer}`}>
       {/* Navbar */}
       <Navbar expand="lg" variant="dark" className="px-3">
-        <Navbar.Brand as={NavLink} to="/" className={`mt-3 ${styles.brand}`}>
-          CRITIC<span style={{ color: "red" }}>A</span>L
+        <Navbar.Brand as={NavLink} to="/" className="mt-3">
+          <Image src={Logo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">

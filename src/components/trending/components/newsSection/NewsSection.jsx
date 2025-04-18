@@ -47,7 +47,7 @@ function NewsSection() {
   ];
 
   return (
-    <div className={`p-3 mb-5 ${styles.mainBg}`}>
+    <div className={`p-3  ${styles.mainBg}`}>
       <Container fluid className="p-3">
         <h5 className={` mb-4 ${styles.customHeading}`}>News</h5>
 

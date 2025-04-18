@@ -9,19 +9,20 @@ import iconThree from "../../assets/images/FooterSection/iconThree.png";
 
 function Footer() {
   return (
-    <Container fluid className={`p-3 ${styles.footerBg}`}>
+    <Container fluid className={`p-4 ${styles.footerBg}`}>
       <Row className="align-items-start">
         <Col md={6}>
           <Image
             src={Logo}
             alt="Logo"
-            className={`mt-4 mb-5 ${styles.footerLogo}`}
+            className={`mb-5 ${styles.footerLogo}`}
           />
           <div className={`mt-5 ${styles.textBlack}`}>
-            2901 W Alameda Ave, 7th Floor Burbank, CA 91505
+            <p>
+              2901 W Alameda Ave, 7th Floor Burbank, CA 91505 <br />{" "}
+              info@criticalcontent.com <br /> (818) 480-4900{" "}
+            </p>
           </div>
-          <div className={`${styles.textBlack}`}>info@criticalcontent.com</div>
-          <div className={`${styles.textBlack}`}>(818) 480-4900</div>
         </Col>
         <Col md={6} className="text-end">
           <div className="mb-5 mt-4">

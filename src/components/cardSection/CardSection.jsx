@@ -51,7 +51,7 @@ function CardSection() {
           <Col key={item.id} md={6} lg={6} xl={6} xxl={6} className="mb-4">
             <Card className={`${styles.customCard}`}>
               <Card.Img variant="top" src={item.img} />
-              <Card.Body>
+              <Card.Body className="p-0 pt-3">
                 <Badge className={`mb-3 ${styles.customBadge}`}>
                   {item.label}
                 </Badge>
