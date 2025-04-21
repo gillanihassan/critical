@@ -1,0 +1,27 @@
+.mainContainer {
+  background-color: #000;
+}
+.brand{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.customNav{
+  background-color: #313131;
+  border-radius: 7px;
+  padding: 0px 30px;
+}
+.customLink{
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 3px;
+  border-radius: 0.3rem;
+}
+.customLink:hover{
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #BC0017;
+  padding: 3px;
+  border-radius: 0.3rem;
+}

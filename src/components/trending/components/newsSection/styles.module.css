@@ -1,0 +1,30 @@
+.mainBg {
+  background-color: #000;
+  min-height: 100vh;
+  /* border: 3px solid red; */
+}
+.seeMore {
+  color: #BC0017;
+  font-size: 60px;
+  font-weight: 400;
+}
+.customHeading{
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 400;
+}
+.customBadge{
+  background-color: #BC0017 !important;
+  padding: 10px 30px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.customTitle{
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.customCard{
+  background-color: #000;
+}
